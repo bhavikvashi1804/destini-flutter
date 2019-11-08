@@ -38,18 +38,23 @@ class StoryBrain {
 
   int _currentStoryNo = 0;
 
+  //TODO: Step 8 - Create a method called getStory() that returns the first storyTitle from _storyData.
   String getStory() {
     return _storyData[_currentStoryNo].storyTitle;
+  }
+
+  //TODO: Step 11 - Create a method called getChoice1() that returns the text for the first choice1 from _storyData.
+  String getChoice1() {
+    return _storyData[_currentStoryNo].choice1;
+  }
+
+  //TODO: Step 12 - Create a method called getChoice2() that returns the text for the first choice2 from _storyData.
+  String getChoice2() {
+    return _storyData[_currentStoryNo].choice2;
   }
 }
 
 //TODO: Step 23 - Use the storyNumber property inside getStory(), getChoice1() and getChoice2() so that it gets the updated story and choices rather than always just the first (0th) one.
-
-//TODO: Step 8 - Create a method called getStory() that returns the first storyTitle from _storyData.
-
-//TODO: Step 11 - Create a method called getChoice1() that returns the text for the first choice1 from _storyData.
-
-//TODO: Step 12 - Create a method called getChoice2() that returns the text for the first choice2 from _storyData.
 
 //TODO: Step 25 - Change the storyNumber property into a private property so that only story_brain.dart has access to it. You can do this by right clicking on the name (storyNumber) and selecting Refactor -> Rename to make the change across all the places where it's used.
 
